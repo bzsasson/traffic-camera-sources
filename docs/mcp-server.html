@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Query the data from an AI assistant - traffic-camera-sources</title>
+<meta name="description" content="livetrafficcam-mcp is an MCP server that lets AI assistants query live US traffic camera data: cameras by state, mountain pass cameras, and measured uptime.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="index.html">traffic-camera-sources</a> / MCP server</nav>
+<h1>Query the data from an AI assistant</h1>
+<p><a href="https://github.com/bzsasson/livetrafficcam-mcp">livetrafficcam-mcp</a>
+is an MCP (Model Context Protocol) server over the same public API this
+dataset is built from. It gives assistants like Claude live answers
+instead of a static file: cameras on a route, cameras on a mountain
+pass, whether one camera is up right now, and a state's measured
+uptime.</p>
+<h2>Install</h2>
+<pre>claude mcp add livetrafficcam -- npx -y livetrafficcam-mcp</pre>
+<p>Configuration for Claude Desktop and Cursor is in the
+<a href="https://github.com/bzsasson/livetrafficcam-mcp#install">repo README</a>.</p>
+<h2>Tools</h2>
+<ul>
+<li><code>list_states</code>: covered states with camera counts and liveness.</li>
+<li><code>cameras_by_state</code>: cameras for a state, optionally one route.</li>
+<li><code>cameras_for_entity</code>: cameras for a pass, corridor, bridge or tunnel, like
+<a href="https://livetrafficcam.com/traffic-cameras/california/donner-pass/">Donner Pass</a>.</li>
+<li><code>camera_status</code>: one camera's verified-live status and official source.</li>
+<li><code>state_uptime</code>: the state's row from the
+<a href="https://livetrafficcam.com/reports/camera-uptime/">uptime report</a>.</li>
+</ul>
+</main>
+<footer>
+Data aggregated from official agency feeds by
+<a href="https://livetrafficcam.com/">LiveTrafficCam</a>.
+</footer>
+</body>
+</html>

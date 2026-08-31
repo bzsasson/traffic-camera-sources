@@ -1,0 +1,14 @@
+The files authored in this repository (data/sources.json and the docs/
+site) are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0).
+
+You should have received a copy of the license along with this work.
+If not, see https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: "traffic-camera-sources by LiveTrafficCam
+(https://livetrafficcam.com/)".
+
+Camera records in the generated data files (cameras.geojson,
+uptime-summary.json) describe feeds operated by US government agencies
+and carry the attribution line of the operating agency; keep it when
+reusing the data.

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iowa traffic camera data - traffic-camera-sources</title>
+<meta name="description" content="Open data on Iowa (IA) traffic cameras: feed source, camera locations as GeoJSON, and measured liveness.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../index.html">traffic-camera-sources</a> / Iowa</nav>
+<h1>Iowa traffic camera data</h1>
+<p>1,247 cameras tracked; 1,108 verified live right now (88.9%), 85.1% of checks live over 14 days.</p>
+<p class="muted">Figures pulled 2026-08-31 from the
+<a href="https://livetrafficcam.com/reports/camera-uptime/">camera uptime report</a>,
+which refreshes continuously.</p>
+<h2>Data in this repo</h2>
+<ul>
+<li><code>data/cameras.geojson</code> holds a sample of up to 200 IA
+camera locations (200 in the current file) with route,
+live status and agency attribution.</li>
+<li><code>data/sources.json</code> lists the official feed behind the
+IA cameras.</li>
+<li><code>data/uptime-summary.json</code> has the full measured counts.</li>
+</ul>
+<h2>See it live</h2>
+<ul>
+<li><a href="https://livetrafficcam.com/traffic-cameras/iowa/">Iowa traffic cameras</a> - every covered camera, checked for a live image.</li>
+<li><a href="https://livetrafficcam.com/reports/camera-uptime/">Camera uptime report</a> - how IA's fleet compares to other states.</li>
+</ul>
+</main>
+<footer>
+Data aggregated from official agency feeds by
+<a href="https://livetrafficcam.com/">LiveTrafficCam</a>. Repo files are
+CC BY 4.0; camera records carry their agency attribution.
+</footer>
+</body>
+</html>

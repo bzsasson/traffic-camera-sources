@@ -1,0 +1,87 @@
+{
+  "description": "Registry of public US traffic and road-condition camera feed sources, as aggregated by livetrafficcam.com. Authored file, CC BY 4.0.",
+  "updated": "2026-08-31",
+  "registry_source": "https://livetrafficcam.com/sources/",
+  "sources": [
+    {
+      "name": "Alaska 511",
+      "kind": "511_platform",
+      "state": "AK",
+      "official_site": "https://511.alaska.gov/",
+      "terms_url": null,
+      "attribution": "Camera: Alaska DOT&PF"
+    },
+    {
+      "name": "Arizona 511",
+      "kind": "511_platform",
+      "state": "AZ",
+      "official_site": "https://az511.gov/",
+      "terms_url": null,
+      "attribution": "Camera: ADOT"
+    },
+    {
+      "name": "Caltrans CWWP2",
+      "kind": "state_dot",
+      "state": "CA",
+      "official_site": "https://dot.ca.gov/",
+      "terms_url": "https://dot.ca.gov/global-details/conditions-of-use",
+      "attribution": "Camera: Caltrans"
+    },
+    {
+      "name": "Georgia 511",
+      "kind": "511_platform",
+      "state": "GA",
+      "official_site": "https://511ga.org/",
+      "terms_url": null,
+      "attribution": "Camera: GDOT"
+    },
+    {
+      "name": "Iowa DOT",
+      "kind": "state_dot",
+      "state": "IA",
+      "official_site": "https://511ia.org/",
+      "terms_url": "https://iowadot.gov/travel-tools/iowa-511/511-data-feeds",
+      "attribution": "Camera: Iowa DOT"
+    },
+    {
+      "name": "Nevada 511",
+      "kind": "511_platform",
+      "state": "NV",
+      "official_site": "https://www.nvroads.com/",
+      "terms_url": null,
+      "attribution": "Camera: Nevada DOT"
+    },
+    {
+      "name": "Utah 511",
+      "kind": "511_platform",
+      "state": "UT",
+      "official_site": "https://www.udottraffic.utah.gov/",
+      "terms_url": null,
+      "attribution": "Camera: UDOT"
+    },
+    {
+      "name": "WSDOT Traveler Information API",
+      "kind": "state_dot",
+      "state": "WA",
+      "official_site": "https://wsdot.wa.gov/travel/real-time/travel-data",
+      "terms_url": "https://wsdot.wa.gov/travel/real-time/travel-data",
+      "attribution": "Camera: WSDOT"
+    },
+    {
+      "name": "Wisconsin 511",
+      "kind": "511_platform",
+      "state": "WI",
+      "official_site": "https://511wi.gov/",
+      "terms_url": null,
+      "attribution": "Camera: WisDOT"
+    },
+    {
+      "name": "FAA WeatherCams",
+      "kind": "federal",
+      "state": null,
+      "official_site": "https://weathercams.faa.gov/",
+      "terms_url": "https://www.faa.gov/web_policies",
+      "attribution": "Camera: FAA WeatherCams"
+    }
+  ]
+}

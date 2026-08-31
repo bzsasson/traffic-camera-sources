@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How camera liveness is measured - traffic-camera-sources</title>
+<meta name="description" content="How LiveTrafficCam verifies that a traffic camera is actually live: rolling HTTP checks, last-updated timestamps, and honest failure states.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="index.html">traffic-camera-sources</a> / Methodology</nav>
+<h1>How camera liveness is measured</h1>
+<p>Most camera directories assume a camera works because an agency lists
+it. The numbers in <code>uptime-summary.json</code> come from checking
+instead: every camera in the directory is probed on a rolling schedule
+with real HTTP requests, around the clock.</p>
+<h2>What a check does</h2>
+<ul>
+<li>Each check reads the image feed's last-updated time.</li>
+<li>A camera is <strong>live</strong> only when its image is genuinely
+current.</li>
+<li>A camera serving an old frame is <strong>stale</strong>: the feed
+answers, but the picture is not current. Stale cameras look fine until
+you check the timestamp.</li>
+<li>A camera whose feed stops answering is <strong>dead</strong>.</li>
+</ul>
+<p>Timestamps in the data are real check results, never a fixed label.
+Nothing is set by hand.</p>
+<h2>What the summary fields mean</h2>
+<ul>
+<li><code>live_now / stale_now / dead_now</code>: the fleet's state at
+the moment the report was generated.</li>
+<li><code>checkLivePct</code>: the share of all checks over the last 14
+days that found a live image; a stability measure rather than a
+snapshot.</li>
+</ul>
+<h2>Fairness rules</h2>
+<p>The published report excludes states whose feeds cannot be measured
+and does not rank fleets under 50 cameras, so small networks are not
+shamed by small samples. The full ruleset and the always-current numbers
+are on the
+<a href="https://livetrafficcam.com/reports/camera-uptime/">camera
+uptime report</a>.</p>
+</main>
+<footer>
+Data aggregated from official agency feeds by
+<a href="https://livetrafficcam.com/">LiveTrafficCam</a>.
+</footer>
+</body>
+</html>
