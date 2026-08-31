@@ -87,17 +87,25 @@ for (const [code, slug] of Object.entries(STATES)) {
     .split("-")
     .map((w) => w[0].toUpperCase() + w.slice(1))
     .join(" ");
+  // Coerce remote values to finite numbers before they touch HTML, so a
+  // compromised or malformed API response cannot inject markup into the
+  // generated (and auto-committed) pages.
+  const num = (v) => {
+    const n = Number(v);
+    if (!Number.isFinite(n)) throw new Error(`non-numeric uptime value: ${JSON.stringify(v)}`);
+    return n;
+  };
   const uptimeLine = row
-    ? `${row.cams.toLocaleString("en-US")} cameras tracked; ` +
-      `${row.live_now.toLocaleString("en-US")} verified live right now ` +
-      `(${row.liveNowPct}%), ${row.checkLivePct}% of checks live over 14 days.`
+    ? `${num(row.cams).toLocaleString("en-US")} cameras tracked; ` +
+      `${num(row.live_now).toLocaleString("en-US")} verified live right now ` +
+      `(${num(row.liveNowPct)}%), ${num(row.checkLivePct)}% of checks live over 14 days.`
     : `Camera liveness for ${name} is not yet measured in the uptime report.`;
   const html = template
     .replaceAll("{{NAME}}", name)
     .replaceAll("{{CODE}}", code)
     .replaceAll("{{SLUG}}", slug)
     .replaceAll("{{UPTIME_LINE}}", uptimeLine)
-    .replaceAll("{{SAMPLE_COUNT}}", String(perState[code] ?? 0))
+    .replaceAll("{{SAMPLE_COUNT}}", String(Number(perState[code]) || 0))
     .replaceAll("{{DATE}}", dateStamp);
   writeFileSync(join(ROOT, "docs", "states", `${slug}.html`), html);
 }
