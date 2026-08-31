@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveTrafficCam public API documentation</title>
+<meta name="description" content="Documentation for the livetrafficcam.com public JSON API: live US traffic cameras by state or named entity, and measured per-state camera uptime.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="index.html">traffic-camera-sources</a> / API</nav>
+<h1>LiveTrafficCam public API</h1>
+<p>The <a href="https://livetrafficcam.com/">livetrafficcam.com</a> public
+API serves live US traffic camera data as JSON. No authentication, no
+key. Camera liveness is measured with real HTTP checks, so
+<code>live_status</code> reflects whether a feed actually serves a
+current image.</p>
+
+<h2>GET /api/cams.json</h2>
+<p>Cameras for one state or one named entity. Exactly one of the two
+parameters:</p>
+<ul>
+<li><code>?state=WA</code> - two-letter state code.</li>
+<li><code>?entity=donner-pass</code> - slug of a pass, corridor, bridge
+or tunnel.</li>
+</ul>
+<pre>curl "https://livetrafficcam.com/api/cams.json?state=WA"</pre>
+<p>Response: <code>{"cams": [...]}</code>, each camera with
+<code>id</code>, <code>name</code>, <code>slug</code>, <code>lat</code>,
+<code>lng</code>, <code>route</code>, <code>state</code>,
+<code>live_status</code> (<code>live</code>, <code>stale</code> or
+<code>dead</code>), <code>last_live_at</code>,
+<code>official_url</code> (the operating agency's page), and
+<code>attribution</code> (for example "Camera: WSDOT").</p>
+<p><strong>Row cap:</strong> at most 200 cameras per query. For full
+per-state fleet counts use the uptime endpoint below.</p>
+
+<h2>GET /reports/camera-uptime.json</h2>
+<p>Measured per-state uptime of official DOT cameras: cameras tracked,
+live/stale/dead right now, and the 14-day check success rate.</p>
+<pre>curl "https://livetrafficcam.com/reports/camera-uptime.json"</pre>
+<p>Human-readable twin:
+<a href="https://livetrafficcam.com/reports/camera-uptime/">the camera
+uptime report</a>, which is also the citation URL for these numbers.</p>
+
+<h2>GET /reports/traffic-camera-statistics.json</h2>
+<p>How many official DOT traffic cameras exist, per state and per
+agency. Page twin:
+<a href="https://livetrafficcam.com/reports/traffic-camera-statistics/">traffic
+camera statistics</a>.</p>
+
+<h2>Conventions</h2>
+<ul>
+<li>Responses are cached at the edge for 60 seconds; polling faster
+returns the same data.</li>
+<li>Field changes are additive only; existing fields do not get renamed
+or repurposed.</li>
+<li>Keep the per-camera <code>attribution</code> line when displaying
+the data.</li>
+<li>No CORS headers today, so call it server-side.</li>
+<li>Please send a descriptive User-Agent.</li>
+</ul>
+
+<h2>Clients</h2>
+<ul>
+<li><a href="https://github.com/bzsasson/livetrafficcam-mcp">livetrafficcam-mcp</a> -
+MCP server over this API for AI assistants.</li>
+<li><a href="https://github.com/bzsasson/traffic-camera-sources">traffic-camera-sources</a> -
+weekly GeoJSON and uptime snapshots of this API's data.</li>
+</ul>
+</main>
+<footer>
+Data aggregated from official agency feeds by
+<a href="https://livetrafficcam.com/">LiveTrafficCam</a>.
+</footer>
+</body>
+</html>
