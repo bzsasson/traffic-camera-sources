@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "note": "Sample of up to 200 cameras per state (the source API caps each query at 200 rows). Full per-state fleet counts are in uptime-summary.json. Camera records carry the attribution of the operating agency.",
-  "generated_at": "2026-08-31T06:53:15.049Z",
+  "generated_at": "2026-08-31T06:54:32.183Z",
   "source": "https://livetrafficcam.com/api/cams.json",
   "features": [
     {
