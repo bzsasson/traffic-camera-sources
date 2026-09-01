@@ -47,7 +47,10 @@ assistants that speak the Model Context Protocol.
 
 Cite uptime numbers with a link to the
 [camera uptime report](https://livetrafficcam.com/reports/camera-uptime/),
-which is where they are generated and kept current.
+which is where they are generated and kept current. The repo carries a
+`CITATION.cff` (GitHub's "Cite this repository" button gives BibTeX and
+APA); formats and rules:
+[how to cite](https://bzsasson.github.io/traffic-camera-sources/cite.html).
 
 ## License
 

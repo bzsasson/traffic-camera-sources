@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset, please cite it as below, and cite uptime
+  numbers with a link to the live camera uptime report at
+  https://livetrafficcam.com/reports/camera-uptime/
+title: "traffic-camera-sources: US traffic camera feed sources and measured uptime"
+type: dataset
+authors:
+  - family-names: Sasson
+    given-names: Boaz
+repository-code: "https://github.com/bzsasson/traffic-camera-sources"
+url: "https://bzsasson.github.io/traffic-camera-sources/"
+license: CC-BY-4.0
+keywords:
+  - traffic cameras
+  - webcams
+  - road conditions
+  - open data
+  - geojson
+  - uptime
+abstract: >-
+  Open registry of official US traffic camera feed sources (state DOT
+  APIs, 511 platforms, FAA WeatherCams), camera locations as GeoJSON,
+  and measured per-state camera uptime. Liveness is verified with
+  rolling HTTP checks by livetrafficcam.com, so each camera carries a
+  real live/stale/dead status. Refreshed weekly.
+date-released: "2026-08-31"

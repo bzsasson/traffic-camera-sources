@@ -6,6 +6,50 @@
 <title>traffic-camera-sources: open data on US traffic camera feeds</title>
 <meta name="description" content="Open registry of official US traffic camera feed sources, camera locations as GeoJSON, and measured per-state camera uptime.">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "traffic-camera-sources: US traffic camera feed sources and measured uptime",
+  "description": "Open registry of official US traffic camera feed sources (state DOT APIs, 511 platforms, FAA WeatherCams), camera locations as GeoJSON, and measured per-state camera uptime. Liveness is verified with rolling HTTP checks, so each camera carries a real live/stale/dead status. Refreshed weekly.",
+  "url": "https://bzsasson.github.io/traffic-camera-sources/",
+  "sameAs": "https://github.com/bzsasson/traffic-camera-sources",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Person",
+    "name": "Boaz Sasson"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LiveTrafficCam",
+    "url": "https://livetrafficcam.com/"
+  },
+  "keywords": ["traffic cameras", "webcams", "road conditions", "open data", "GeoJSON", "uptime"],
+  "spatialCoverage": "United States",
+  "temporalCoverage": "2026/..",
+  "isAccessibleForFree": true,
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Feed source registry",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/bzsasson/traffic-camera-sources/main/data/sources.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Camera locations (sample of up to 200 per state)",
+      "encodingFormat": "application/geo+json",
+      "contentUrl": "https://raw.githubusercontent.com/bzsasson/traffic-camera-sources/main/data/cameras.geojson"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Per-state uptime summary",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/bzsasson/traffic-camera-sources/main/data/uptime-summary.json"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <main>
@@ -43,6 +87,7 @@ every camera on a rolling schedule with real HTTP requests.</p>
 <li><a href="methodology.html">How liveness is measured</a></li>
 <li><a href="mcp-server.html">Query this data from an AI assistant (MCP server)</a></li>
 <li><a href="api.html">Public API documentation</a></li>
+<li><a href="cite.html">How to cite this dataset</a></li>
 <li><a href="https://livetrafficcam.com/reports/traffic-camera-statistics/">How many traffic cameras are there in the US?</a></li>
 </ul>
 </main>

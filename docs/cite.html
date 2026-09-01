@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to cite - traffic-camera-sources</title>
+<meta name="description" content="How to cite the traffic-camera-sources open dataset and the LiveTrafficCam camera uptime report.">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "traffic-camera-sources: US traffic camera feed sources and measured uptime",
+  "description": "Open registry of official US traffic camera feed sources (state DOT APIs, 511 platforms, FAA WeatherCams), camera locations as GeoJSON, and measured per-state camera uptime. Liveness is verified with rolling HTTP checks, so each camera carries a real live/stale/dead status. Refreshed weekly.",
+  "url": "https://bzsasson.github.io/traffic-camera-sources/",
+  "sameAs": "https://github.com/bzsasson/traffic-camera-sources",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Person",
+    "name": "Boaz Sasson"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LiveTrafficCam",
+    "url": "https://livetrafficcam.com/"
+  },
+  "keywords": ["traffic cameras", "webcams", "road conditions", "open data", "GeoJSON", "uptime"],
+  "spatialCoverage": "United States",
+  "temporalCoverage": "2026/..",
+  "isAccessibleForFree": true,
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Feed source registry",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/bzsasson/traffic-camera-sources/main/data/sources.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Camera locations (sample of up to 200 per state)",
+      "encodingFormat": "application/geo+json",
+      "contentUrl": "https://raw.githubusercontent.com/bzsasson/traffic-camera-sources/main/data/cameras.geojson"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Per-state uptime summary",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/bzsasson/traffic-camera-sources/main/data/uptime-summary.json"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="index.html">traffic-camera-sources</a> / How to cite</nav>
+<h1>How to cite this dataset</h1>
+<p>The dataset is CC BY 4.0: use it freely, with attribution. Two rules
+keep citations honest:</p>
+<ul>
+<li>Cite uptime numbers with a link to the live
+<a href="https://livetrafficcam.com/reports/camera-uptime/">camera uptime
+report</a>, where they are generated and kept current. Numbers in this
+repo are weekly snapshots and go stale.</li>
+<li>Keep the per-camera agency attribution (for example "Camera:
+Caltrans") when displaying camera data.</li>
+</ul>
+<h2>Citation formats</h2>
+<p>Plain text:</p>
+<pre>Sasson, B. traffic-camera-sources: US traffic camera feed sources and
+measured uptime. LiveTrafficCam.
+https://bzsasson.github.io/traffic-camera-sources/</pre>
+<p>The repository carries a <code>CITATION.cff</code>, so GitHub's "Cite
+this repository" button produces BibTeX and APA directly. A DOI per
+release via Zenodo is planned; this page will carry it once minted.</p>
+<h2>What you are citing</h2>
+<p>The registry of official feed sources is authored by hand and
+maintained. The camera GeoJSON is a disclosed sample of up to 200
+cameras per state (the source API caps each query); full per-state
+fleet counts live in the uptime summary. Liveness methodology:
+<a href="methodology.html">how liveness is measured</a>.</p>
+</main>
+<footer>
+Data aggregated from official agency feeds by
+<a href="https://livetrafficcam.com/">LiveTrafficCam</a>.
+</footer>
+</body>
+</html>
