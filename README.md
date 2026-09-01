@@ -1,5 +1,7 @@
 # traffic-camera-sources
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22223825.svg)](https://doi.org/10.5281/zenodo.22223825)
+
 Open data on public US traffic and road-condition cameras: which
 official feeds exist, where the cameras are, and how reliably each
 state's fleet actually serves a live image.

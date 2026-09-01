@@ -8,6 +8,10 @@ type: dataset
 authors:
   - family-names: Sasson
     given-names: Boaz
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22223825
+    description: Concept DOI for all versions; resolves to the latest release
 repository-code: "https://github.com/bzsasson/traffic-camera-sources"
 url: "https://bzsasson.github.io/traffic-camera-sources/"
 license: CC-BY-4.0
