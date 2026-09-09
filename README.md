@@ -24,6 +24,12 @@ data means a verified current image, not a listing.
 - `data/uptime-summary.json` — full measured per-state counts: cameras
   tracked, live/stale/dead right now, and the 14-day check success
   rate. A copy of the live report JSON with its `source` field kept.
+- `data/uptime/history.csv` — the same per-state numbers as a weekly
+  time series, one row per state per refresh, from 2026-08-31 onward:
+  cameras tracked, live/stale/dead at refresh time, and the 14-day check
+  counts and live rate. This is the file to use for "how reliable is
+  each state's fleet over time". `data/uptime/snapshots/` keeps each
+  week's raw report.
 
 A weekly GitHub Action re-pulls the generated files and commits only
 when something changed. No images or image URLs are included.

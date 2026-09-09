@@ -3,6 +3,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { recordSnapshot, snapshotDate } from "./history.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://livetrafficcam.com";
@@ -32,6 +33,10 @@ writeFileSync(
   JSON.stringify(uptime, null, 2) + "\n",
 );
 console.log(`uptime-summary.json: ${uptime.states.length} states`);
+
+// 1b. Uptime history: keep this week's report as a dated snapshot and add
+// one row per state to the CSV time series (data/uptime/).
+console.log(`uptime history: ${recordSnapshot(ROOT, uptime)} rows for ${snapshotDate(uptime)}`);
 
 // 2. Camera locations as GeoJSON, one query per covered state.
 const features = [];

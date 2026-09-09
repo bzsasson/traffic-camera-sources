@@ -47,6 +47,12 @@
       "name": "Per-state uptime summary",
       "encodingFormat": "application/json",
       "contentUrl": "https://raw.githubusercontent.com/bzsasson/traffic-camera-sources/main/data/uptime-summary.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Per-state uptime history (weekly time series)",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://raw.githubusercontent.com/bzsasson/traffic-camera-sources/main/data/uptime/history.csv"
     }
   ]
 }
@@ -67,6 +73,7 @@ every camera on a rolling schedule with real HTTP requests.</p>
 <tr><td><code>data/sources.json</code></td><td>Registry of official feed sources: state DOT APIs, 511 platforms, FAA WeatherCams. Name, kind, state, official site, terms, attribution line.</td></tr>
 <tr><td><code>data/cameras.geojson</code></td><td>Camera locations as GeoJSON points with route, live status and agency attribution. A sample of up to 200 cameras per state; the source API caps each query.</td></tr>
 <tr><td><code>data/uptime-summary.json</code></td><td>Full measured per-state counts: cameras tracked, live/stale/dead now, 14-day check success. Mirrors the live <a href="https://livetrafficcam.com/reports/camera-uptime/">camera uptime report</a>.</td></tr>
+<tr><td><code>data/uptime/history.csv</code></td><td>The same per-state numbers as a weekly time series from 2026-08-31: one row per state per refresh, with the 14-day check counts. Raw weekly reports sit in <code>data/uptime/snapshots/</code>. Use this for reliability over time.</td></tr>
 </table>
 <p class="muted">A weekly GitHub Action re-pulls the generated files;
 <code>sources.json</code> is maintained by hand.</p>

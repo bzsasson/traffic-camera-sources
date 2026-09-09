@@ -35,6 +35,15 @@ the moment the report was generated.</li>
 days that found a live image; a stability measure rather than a
 snapshot.</li>
 </ul>
+<h2>The time series</h2>
+<p><code>data/uptime/history.csv</code> records these fields once a week
+per state, from 2026-08-31 onward. Each row is the report as generated
+that day: the "now" columns are that moment's fleet state, and the
+14-day columns cover the two weeks before it. Consecutive weekly rows
+therefore overlap by a week in their 14-day window; treat the 14-day
+rate as a smoothed reliability measure, and the "now" columns as the
+weekly point sample. Rows are never edited after the fact. A state
+appears only from the week its feed became measurable.</p>
 <h2>Fairness rules</h2>
 <p>The published report excludes states whose feeds cannot be measured
 and does not rank fleets under 50 cameras, so small networks are not
