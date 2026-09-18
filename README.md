@@ -51,6 +51,10 @@ an MCP server over the same API: cameras by state or route, mountain
 pass cameras, single-camera status, and per-state uptime, for AI
 assistants that speak the Model Context Protocol.
 
+## Also available
+
+A [Home Assistant integration](https://github.com/bzsasson/livetrafficcam-homeassistant) puts a pass, bridge, tunnel, airport or highway on a dashboard: one camera entity per camera, a verified-live sensor each, and reported disruptions. No API keys.
+
 ## Citing
 
 Cite uptime numbers with a link to the
