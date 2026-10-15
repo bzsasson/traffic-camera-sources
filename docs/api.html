@@ -50,6 +50,21 @@ agency. Page twin:
 <a href="https://livetrafficcam.com/reports/traffic-camera-statistics/">traffic
 camera statistics</a>.</p>
 
+<h2>Active and tracked counts (since 2026-10-15)</h2>
+<p>Both reports keep their existing count fields, which cover every
+camera we track: in the uptime report, a state's <code>cams</code> is its
+live, stale and dead cameras combined. Both reports also carry an active
+count, <code>camsCounted</code> in <code>totals</code>. Per row, the
+uptime report adds <code>cams_counted</code> to each state and metro; the
+statistics report adds <code>camsCounted</code> to each state and
+<code>cams_counted</code> to each network, plus
+<code>dotCamsCounted</code> and <code>federalCamsCounted</code> in its
+totals. Active leaves out
+cameras that have shown no live picture for 30 days (a camera added in
+the last 30 days stays in while it waits for its first picture). The
+site's pages show the active number, so it is the one to use when
+matching a figure on livetrafficcam.com.</p>
+
 <h2>Conventions</h2>
 <ul>
 <li>Responses are cached at the edge for 60 seconds; polling faster
