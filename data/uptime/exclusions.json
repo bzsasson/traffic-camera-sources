@@ -1,0 +1,74 @@
+{
+  "note": "Windows in which the uptime numbers should not be read as agency reliability. Times are UTC. kind: 'ours' = our checker was the problem; 'method' = the definition of live or of the fleet changed, so rows on either side are not comparable; 'agency' = a real outage on the agency's side, kept so a reader can tell it from ours. scope: 'all' or a list of state codes. history.csv's quality column is derived from this file by scripts/history.mjs.",
+  "windows": [
+    {
+      "from": "2026-08-27T02:00:00Z",
+      "to": "2026-08-31T07:57:00Z",
+      "kind": "ours",
+      "scope": "all",
+      "reason": "Checker cache bug: GET requests were served from the edge cache, so healthy cameras read as stale. Fixed with cache: no-store. Same window the site's own uptime report excludes."
+    },
+    {
+      "from": "2026-09-22T00:00:00Z",
+      "to": "2026-09-22T23:59:59Z",
+      "kind": "method",
+      "scope": "all",
+      "reason": "Frozen-picture rule: a camera whose image bytes have not changed for longer than its refresh window now reads stale even when the server's Last-Modified header is fresh. Stricter definition of live from this day; 96 cameras flipped on day one."
+    },
+    {
+      "from": "2026-09-25T00:00:00Z",
+      "to": "2026-09-29T23:59:59Z",
+      "kind": "ours",
+      "scope": ["GA"],
+      "reason": "Georgia image failures on our side: proxy timing, slow-agency fallback and sampler timeouts, fixed 2026-09-28 and confirmed 2026-09-29."
+    },
+    {
+      "from": "2026-09-26T00:00:00Z",
+      "to": "2026-09-26T23:59:59Z",
+      "kind": "method",
+      "scope": ["UT", "WI", "OR"],
+      "reason": "Region-pinned hosts moved from HEAD to full GET checks with placard and frozen-frame rules. Utah's offline cards had read live under HEAD; about 61 cameras left live on the switch."
+    },
+    {
+      "from": "2026-09-28T10:22:00Z",
+      "to": "2026-09-29T15:16:00Z",
+      "kind": "ours",
+      "scope": "all",
+      "reason": "Cloudflare delivered every cron twice: 41,030 duplicate check rows and double requests to agencies. Rates barely move but check counts for this span are inflated."
+    },
+    {
+      "from": "2026-10-03T23:00:00Z",
+      "to": "2026-10-06T23:59:59Z",
+      "kind": "agency",
+      "scope": ["GA", "NV", "ID"],
+      "reason": "Agency-side outages: about 210 Nevada cameras froze, Georgia fell to 26% live, Idaho to 49%. Every check answered 200; nothing on our side."
+    },
+    {
+      "from": "2026-10-05T00:00:00Z",
+      "to": "2026-10-05T23:59:59Z",
+      "kind": "method",
+      "scope": ["CO", "IN", "KS", "MA", "MN", "MO", "MT", "NE", "SC", "SD", "OR", "HI"],
+      "reason": "Twelve states wired in one scale-up. Their first rows cover a partial 14-day window; see the partial flag."
+    },
+    {
+      "from": "2026-10-15T00:00:00Z",
+      "to": "2026-10-15T23:59:59Z",
+      "kind": "method",
+      "scope": "all",
+      "reason": "Cameras dead for 30 or more days leave the counted fleet. The cams column shrinks for several states from this row on; rates before and after use different denominators."
+    },
+    {
+      "from": "2026-10-21T21:00:00Z",
+      "to": "2026-10-22T23:59:59Z",
+      "kind": "agency",
+      "scope": ["GA", "WI", "CO"],
+      "reason": "One vendor behind all three (Castle Rock CARS image hosting): Georgia fell to 0% live from 04:00 UTC, Wisconsin to about 5%, Colorado to about 20%. Every check answered 200 with placeholder or frozen frames. Ongoing at writing; extend the end when it clears."
+    }
+  ],
+  "caveats": [
+    {
+      "scope": ["GA"],
+      "reason": "GDOT rotates a placeholder image into its feeds, so the live rate for Georgia under-reads working cameras by an amount that varies by hour. Treat Georgia's rate as a lower bound until the placard rule is settled."
+    }
+  ]
+}

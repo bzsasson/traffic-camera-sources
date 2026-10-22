@@ -44,6 +44,23 @@ therefore overlap by a week in their 14-day window; treat the 14-day
 rate as a smoothed reliability measure, and the "now" columns as the
 weekly point sample. Rows are never edited after the fact. A state
 appears only from the week its feed became measurable.</p>
+<h2>Which rows to trust</h2>
+<p>The checker is software, and in its first weeks it had incidents of
+its own, and its definition of "live" was tightened twice. Those weeks
+are in the file, because deleting them would hide how the measurement
+matured, but they are not agency reliability. Every row carries a
+<code>quality</code> flag derived from <code>exclusions.json</code>:
+<code>clean</code> (no known window touches the row's 14 days),
+<code>affected</code> (our checker was the problem for part of it),
+<code>method</code> (the definition of live or of the counted fleet
+changed inside it, so rows either side do not compare),
+<code>partial</code> (too few checks per camera for a full fortnight,
+a state's first weeks), <code>agency</code> (a known agency-side
+outage; the number is real but not typical). The <code>note</code>
+column names the windows. Compare states or weeks on
+<code>clean</code> rows only. The last definition change was
+2026-10-15, so the clean run starts with the first row whose 14 days
+fall entirely after it.</p>
 <h2>Fairness rules</h2>
 <p>The published report excludes states whose feeds cannot be measured
 and does not rank fleets under 50 cameras, so small networks are not

@@ -29,7 +29,16 @@ data means a verified current image, not a listing.
   cameras tracked, live/stale/dead at refresh time, and the 14-day check
   counts and live rate. This is the file to use for "how reliable is
   each state's fleet over time". `data/uptime/snapshots/` keeps each
-  week's raw report.
+  week's raw report. Every row carries a `quality` flag and a `note`:
+  `clean` rows are agency reliability; `affected` rows include a window
+  where our own checker was the problem; `method` rows span a change in
+  how live or the fleet is defined; `partial` rows hold too few checks
+  for a full fortnight; `agency` rows include a known agency outage.
+  Filter on `quality == clean` before comparing states or weeks. The
+  windows behind the flags are in `data/uptime/exclusions.json`, each
+  with its reason. As of 2026-10-22 the series has nine weeks and only
+  one fully clean week; the clean run starts after the last definition
+  change on 2026-10-15.
 
 A weekly GitHub Action re-pulls the generated files and commits only
 when something changed. No images or image URLs are included.

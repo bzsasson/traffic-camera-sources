@@ -1,27 +1,19 @@
-// One-off: rebuild data/uptime/history.csv and the dated snapshots from
-// every version of data/uptime-summary.json in git history. Safe to re-run;
-// recordSnapshot replaces rows per date. Run from the repo root:
+// Rebuild data/uptime/history.csv from the snapshot files, recomputing the
+// quality flags from data/uptime/exclusions.json. Safe to re-run; run it
+// after editing exclusions.json. From the repo root:
 //   node scripts/backfill-history.mjs
-import { execFileSync } from "node:child_process";
+import { readdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { recordSnapshot, snapshotDate } from "./history.mjs";
+import { rebuildHistory, snapshotDate } from "./history.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const FILE = "data/uptime-summary.json";
+const DIR = join(ROOT, "data", "uptime", "snapshots");
 
-const shas = execFileSync("git", ["log", "--format=%H", "--reverse", "--", FILE], { cwd: ROOT })
-  .toString()
-  .trim()
-  .split("\n")
-  .filter(Boolean);
+const snapshots = readdirSync(DIR)
+  .filter((f) => f.endsWith(".json"))
+  .sort()
+  .map((f) => JSON.parse(readFileSync(join(DIR, f), "utf8")));
 
-let written = 0;
-for (const sha of shas) {
-  const json = execFileSync("git", ["show", `${sha}:${FILE}`], { cwd: ROOT }).toString();
-  const uptime = JSON.parse(json);
-  const n = recordSnapshot(ROOT, uptime);
-  console.log(`${sha.slice(0, 7)} ${snapshotDate(uptime)}: ${n} states`);
-  written += n;
-}
-console.log(`backfilled ${shas.length} snapshots, ${written} rows`);
+for (const u of snapshots) console.log(`${snapshotDate(u)}: ${u.states.length} states`);
+console.log(`rebuilt history.csv: ${rebuildHistory(ROOT, snapshots)} rows from ${snapshots.length} snapshots`);
