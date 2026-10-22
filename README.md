@@ -40,6 +40,14 @@ data means a verified current image, not a listing.
   one fully clean week; the clean run starts after the last definition
   change on 2026-10-15.
 
+- `data/slices/` — curated slices for one audience each, built from the
+  places that have pages, never a whole state. First slice:
+  `sierra-chain-control.geojson`, up to 60 cameras on the Caltrans
+  chain-control stretches of I-80 over Donner Pass and US-50 over Echo
+  Summit plus the Nevada approach to Reno; each record carries the
+  agency attribution and the page where its live status is. Definitions
+  in `scripts/slices.mjs`.
+
 A weekly GitHub Action re-pulls the generated files and commits only
 when something changed. No images or image URLs are included.
 

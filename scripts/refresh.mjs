@@ -4,6 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { recordSnapshot, snapshotDate } from "./history.mjs";
+import { writeSlices } from "./slices.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://livetrafficcam.com";
@@ -115,3 +116,6 @@ for (const [code, slug] of Object.entries(STATES)) {
   writeFileSync(join(ROOT, "docs", "states", `${slug}.html`), html);
 }
 console.log(`state pages: ${Object.keys(STATES).length}`);
+
+// 4. Curated slices (data/slices/), see scripts/slices.mjs.
+await writeSlices();

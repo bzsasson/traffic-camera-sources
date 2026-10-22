@@ -1,0 +1,1210 @@
+{
+  "type": "FeatureCollection",
+  "name": "Sierra Nevada chain-control passes",
+  "audience": "Tahoe-bound drivers: Caltrans chain-control stretches of I-80 over Donner Pass and US-50 over Echo Summit, plus the Nevada approach to Reno.",
+  "note": "Curated slice of up to 60 cameras from the places listed in properties.place; not a full fleet. Each record carries the operating agency's attribution; live status is on the page link.",
+  "generated_at": "2026-10-22T10:09:17.048Z",
+  "source": "https://livetrafficcam.com/api/cams.json",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.449498,
+          39.313528
+        ]
+      },
+      "properties": {
+        "id": 470,
+        "name": "Hwy 80 at Kingvale EB 1",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atkingvaleeb1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.449498,
+          39.313528
+        ]
+      },
+      "properties": {
+        "id": 469,
+        "name": "Hwy 80 at Kingvale EB 2",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atkingvaleeb2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.439405,
+          39.31582
+        ]
+      },
+      "properties": {
+        "id": 258,
+        "name": "Hwy 80 at Kingvale WB",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atkingvalewb.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.389657,
+          39.326506
+        ]
+      },
+      "properties": {
+        "id": 259,
+        "name": "Hwy 80 at Soda Springs EB",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atsodaspringseb.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.355626,
+          39.334602
+        ]
+      },
+      "properties": {
+        "id": 284,
+        "name": "Hwy 80 at Castle Peak",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atcastlepeak.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.347722,
+          39.339039
+        ]
+      },
+      "properties": {
+        "id": 280,
+        "name": "Hwy 80 at Donner Summit",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atdonnersummit.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.285422,
+          39.33075
+        ]
+      },
+      "properties": {
+        "id": 283,
+        "name": "Hwy 80 at Donner Lake",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atdonnerlake.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.219099,
+          39.323597
+        ]
+      },
+      "properties": {
+        "id": 260,
+        "name": "Hwy 80 at Old Ag Sta",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atoldagsta.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.207395,
+          39.322884
+        ]
+      },
+      "properties": {
+        "id": 261,
+        "name": "Hwy 80 at Hwy 89",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80athwy89.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.16833,
+          39.33791
+        ]
+      },
+      "properties": {
+        "id": 262,
+        "name": "Hwy 80 at 267",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80at267.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.130051,
+          39.362234
+        ]
+      },
+      "properties": {
+        "id": 263,
+        "name": "Hwy 80 at Truckee Scales",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80attruckeescales.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.12443,
+          39.36354
+        ]
+      },
+      "properties": {
+        "id": 333,
+        "name": "Hwy 80 at Truckee Scales WB",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80attruckeescaleswb.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "donner-pass",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/donner-pass/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.02928,
+          38.81321
+        ]
+      },
+      "properties": {
+        "id": 282,
+        "name": "Hwy 50 at Echo Summit",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atechosummit.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "echo-summit",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/echo-summit/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.993299,
+          39.003707
+        ]
+      },
+      "properties": {
+        "id": 255,
+        "name": "Hwy 80 at Applegate",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atapplegate.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "i-80-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.949353,
+          39.095665
+        ]
+      },
+      "properties": {
+        "id": 256,
+        "name": "Hwy 80 at Colfax",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atcolfax.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "i-80-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.719639,
+          39.269867
+        ]
+      },
+      "properties": {
+        "id": 257,
+        "name": "Hwy 80 at Whitmore Grade",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atwhitmoregrade.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "i-80-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.023839,
+          39.395554
+        ]
+      },
+      "properties": {
+        "id": 264,
+        "name": "Hwy 80 at Floriston",
+        "route": "I-80",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy80atfloriston.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "i-80-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.969424,
+          38.6596759
+        ]
+      },
+      "properties": {
+        "id": 368,
+        "name": "Hwy 50 at Cameron_Park_ED50_WB_1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atcameronparked50wb1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.969424,
+          38.6596759
+        ]
+      },
+      "properties": {
+        "id": 369,
+        "name": "Hwy 50 at Cameron_Park_ED50_WB_2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atcameronparked50wb2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.93579,
+          38.66352
+        ]
+      },
+      "properties": {
+        "id": 337,
+        "name": "Hwy 50 at Ponderosa 1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atponderosa1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.93578,
+          38.66352
+        ]
+      },
+      "properties": {
+        "id": 336,
+        "name": "Hwy 50 at Ponderosa 2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atponderosa2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.884516,
+          38.695782
+        ]
+      },
+      "properties": {
+        "id": 366,
+        "name": "Hwy 50 at Greenstone 1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atgreenstone1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.884516,
+          38.695782
+        ]
+      },
+      "properties": {
+        "id": 367,
+        "name": "Hwy 50 at Greenstone 2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atgreenstone2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.83915,
+          38.71102
+        ]
+      },
+      "properties": {
+        "id": 334,
+        "name": "Hwy 50 at Missouri Flat 1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atmissouriflat1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.839178,
+          38.711022
+        ]
+      },
+      "properties": {
+        "id": 335,
+        "name": "Hwy 50 at Missouri Flat 2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atmissouriflat2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.83399,
+          38.721336
+        ]
+      },
+      "properties": {
+        "id": 357,
+        "name": "Forni_ED50_WB_1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/fornied50wb1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.83399,
+          38.721336
+        ]
+      },
+      "properties": {
+        "id": 358,
+        "name": "Forni_ED50_WB_2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/fornied50wb2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.816119,
+          38.730391
+        ]
+      },
+      "properties": {
+        "id": 354,
+        "name": "Placerville_Dr_JEO_ED50_WB_1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/placervilledrjeoed50wb1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.816119,
+          38.730391
+        ]
+      },
+      "properties": {
+        "id": 355,
+        "name": "Placerville_Dr_JEO_ED50_WB_2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/placervilledrjeoed50wb2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.807938390447,
+          38.7284483636516
+        ]
+      },
+      "properties": {
+        "id": 330,
+        "name": "Hwy 50 at Canal St",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atcanalst.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.805065,
+          38.727947
+        ]
+      },
+      "properties": {
+        "id": 233,
+        "name": "Hwy 50 at Spring",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atspring.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.79934,
+          38.73059
+        ]
+      },
+      "properties": {
+        "id": 331,
+        "name": "Hwy 50 at Bedford",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atbedford.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.67619,
+          38.734511
+        ]
+      },
+      "properties": {
+        "id": 349,
+        "name": "Snow_ED50_EB_1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/snowed50eb1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.67619,
+          38.734511
+        ]
+      },
+      "properties": {
+        "id": 350,
+        "name": "Snow_ED50_EB_2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/snowed50eb2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.591929,
+          38.756014
+        ]
+      },
+      "properties": {
+        "id": 351,
+        "name": "Sly_Park_ED50_EB_1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/slyparked50eb1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.591929,
+          38.756014
+        ]
+      },
+      "properties": {
+        "id": 352,
+        "name": "Sly_Park_ED50_EB_2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/slyparked50eb2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.47105,
+          38.77383
+        ]
+      },
+      "properties": {
+        "id": 365,
+        "name": "Hwy 50 at Riverton Sandhouse",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atrivertonsandhouse.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.446648,
+          38.768721
+        ]
+      },
+      "properties": {
+        "id": 364,
+        "name": "Hwy 50 at Ice House",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50aticehouse.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.211153852982,
+          38.7862961207537
+        ]
+      },
+      "properties": {
+        "id": 462,
+        "name": "Hwy 50 at Wrights Lake 2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atwrightslake2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.210437,
+          38.786496
+        ]
+      },
+      "properties": {
+        "id": 447,
+        "name": "Hwy 50 at Wrights Lake 1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atwrightslake1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.124303,
+          38.811193
+        ]
+      },
+      "properties": {
+        "id": 293,
+        "name": "Hwy 50 at Twin Bridges",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50attwinbridges.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.07592,
+          38.81914
+        ]
+      },
+      "properties": {
+        "id": 294,
+        "name": "Hwy 50 at Sierra EB",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atsierraeb.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.022959,
+          38.850899
+        ]
+      },
+      "properties": {
+        "id": 234,
+        "name": "Hwy 50 at Meyers",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atmeyers.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.0118354,
+          38.85815257
+        ]
+      },
+      "properties": {
+        "id": 353,
+        "name": "Pioneer_Trail_ED50_EB_1",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/pioneertrailed50eb1.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.011870434781,
+          38.8583234178416
+        ]
+      },
+      "properties": {
+        "id": 356,
+        "name": "Pioneer_Trail_ED50_EB_2",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/pioneertrailed50eb2.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.00461,
+          38.913277
+        ]
+      },
+      "properties": {
+        "id": 235,
+        "name": "Hwy 50 at Hwy 89",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50athwy89.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.95724,
+          38.948564
+        ]
+      },
+      "properties": {
+        "id": 236,
+        "name": "Hwy 50 at Ski Run",
+        "route": "US-50",
+        "state": "CA",
+        "official_url": "https://cwwp2.dot.ca.gov/vm/loc/d3/hwy50atskirun.htm",
+        "attribution": "Camera: Caltrans",
+        "place": "us-50-california",
+        "page": "https://livetrafficcam.com/traffic-cameras/california/us-50/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.99694,
+          39.49471
+        ]
+      },
+      "properties": {
+        "id": 1525760,
+        "name": "I-80 EB @ Mahogany Canyon Rd (Exit 1)",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7883",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7762,
+          39.5342
+        ]
+      },
+      "properties": {
+        "id": 1525692,
+        "name": "I80 @ Battleborn / Kietzke Ln",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7815",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.96532,
+          39.51126
+        ]
+      },
+      "properties": {
+        "id": 1525681,
+        "name": "I80 @ Boomtown Garson Rd",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7804",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.8142,
+          39.5346
+        ]
+      },
+      "properties": {
+        "id": 1525690,
+        "name": "I80 @ Center St On Ramp",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7813",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.9468,
+          39.5119
+        ]
+      },
+      "properties": {
+        "id": 1525828,
+        "name": "I80 @ East Verdi",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7302",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.99633,
+          39.50982
+        ]
+      },
+      "properties": {
+        "id": 1525699,
+        "name": "I80 @ Exit 2 Gold Ranch",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7822",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.8296,
+          39.5302
+        ]
+      },
+      "properties": {
+        "id": 1525687,
+        "name": "I80 @ Keystone Ave",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7810",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.92431,
+          39.51565
+        ]
+      },
+      "properties": {
+        "id": 1525680,
+        "name": "I80 @ Mogul Exit 7",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7803",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7579,
+          39.5337
+        ]
+      },
+      "properties": {
+        "id": 1525666,
+        "name": "I80 @ Nugget",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7789",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.77776,
+          39.53564
+        ]
+      },
+      "properties": {
+        "id": 1525784,
+        "name": "I80 @ Prater Way",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7907",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7533,
+          39.5343
+        ]
+      },
+      "properties": {
+        "id": 1525694,
+        "name": "I80 @ Pyramid Way",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7817",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.8875,
+          39.5154
+        ]
+      },
+      "properties": {
+        "id": 1525682,
+        "name": "I80 @ Robb Dr",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7805",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7653,
+          39.5335
+        ]
+      },
+      "properties": {
+        "id": 1525693,
+        "name": "I80 @ Rock Blvd",
+        "route": "I-80",
+        "state": "NV",
+        "official_url": "https://nvroads.com/map#camera-7816",
+        "attribution": "Camera: Nevada DOT",
+        "place": "i-80-nevada",
+        "page": "https://livetrafficcam.com/traffic-cameras/nevada/i-80/"
+      }
+    }
+  ]
+}
