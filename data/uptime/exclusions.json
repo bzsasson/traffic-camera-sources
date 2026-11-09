@@ -63,6 +63,13 @@
       "kind": "agency",
       "scope": ["GA", "WI", "CO"],
       "reason": "One vendor behind all three (Castle Rock CARS image hosting): Georgia fell to 0% live from 04:00 UTC, Wisconsin to about 5%, Colorado to about 20%. Every check answered 200 with placeholder or frozen frames. Ongoing at writing; extend the end when it clears."
+    },
+    {
+      "from": "2026-11-08T14:00:00Z",
+      "to": "2026-11-09T14:00:00Z",
+      "kind": "agency",
+      "scope": ["IA"],
+      "reason": "Iowa DOT's image server stopped updating its pictures: every file still answered 200 but its Last-Modified time froze. Iowa checks fell to 4 to 12% live an hour, against 80 to 92% in the hours before. Recovered to 98% live from 14:00 UTC on 2026-11-09. Nothing on our side."
     }
   ],
   "caveats": [
